@@ -1,17 +1,20 @@
 header {
-  padding: 20px;
+  padding: 0 20px;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   color: rgb(15, 21, 110);
   font-size: 25px;
   font-weight: bold;
-  float: left;
 }
 
-.menu {
-  float: right;
+.menu-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
@@ -21,7 +24,6 @@ a {
 
 li {
   list-style: none;
-  float: left;
   padding-right: 25px;
   font-weight: bold;
 }
@@ -37,11 +39,11 @@ h1 {
   position: absolute;
   top: 60%;
   border-bottom: 200px solid rgb(15, 21, 110);
+  z-index: -1;
 }
 
 img {
   display: block;
   width: 50%;
-  position: relative;
   margin: 30px 0 0 auto;
 }
